@@ -59,6 +59,7 @@ body {
 
 .accordion__input:checked ~ .accordion__header .accordion__icon {
   opacity: 1;
+  transform: rotate(45deg);
 }
 
 .accordion__content {
