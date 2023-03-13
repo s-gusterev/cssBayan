@@ -57,11 +57,6 @@ body {
   transform: scale(1);
 }
 
-.accordion__input:checked ~ .accordion__header .accordion__icon {
-  opacity: 1;
-  transform: rotate(45deg);
-}
-
 .accordion__content {
   opacity: 0;
   height: 0;
@@ -118,6 +113,14 @@ body {
   .accordion:hover .accordion__heading {
     color: black;
     transition: color 0.3s ease;
+  }
+
+  .accordion:hover
+    .accordion__input:checked
+    ~ .accordion__header
+    .accordion__icon {
+    transform: rotate(45deg);
+    opacity: 1;
   }
 
   .accordion:hover .accordion__header .accordion__icon {
