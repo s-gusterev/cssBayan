@@ -57,6 +57,11 @@ body {
   transform: scale(1);
 }
 
+.accordion__input:checked ~ .accordion__header .accordion__icon {
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
 .accordion__content {
   opacity: 0;
   height: 0;
