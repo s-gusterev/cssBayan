@@ -40,6 +40,10 @@ body {
   cursor: pointer;
 }
 
+.accordion__label:active {
+  opacity: 0.7;
+}
+
 .accordion__input {
   opacity: 0;
   width: 0;
